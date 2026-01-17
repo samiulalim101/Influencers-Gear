@@ -142,6 +142,7 @@ header .companies{
     
    header{
     padding: 35px 16px 0px 16px;
+    
    }
 
    main{
@@ -169,6 +170,7 @@ header .companies{
     main{
         flex-direction: column-reverse;
         height: auto;
+        margin-top: 22px;
         
         align-self: center;
     }
@@ -240,3 +242,96 @@ header .companies .companies_logo2 img{
     
     
 }
+
+
+
+/* pospular collection section */
+
+.popular_collection{
+    margin-top: 100px;
+}
+.popular_collection h2{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+    justify-self: center;
+}
+.popular_collection .card{
+    width: 329px;
+
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.119);
+    
+
+}
+
+.popular_collection .card img{
+    
+    width: 300px;
+    border-radius: 5px;
+    
+
+}
+
+.popular_collection .card h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+
+}
+
+.popular_collection .card p{
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    
+
+}
+
+.popular_collection .card .stars{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 4px;
+
+}
+
+.popular_collection .card .stars img{
+    width: 16px;
+    height: 16px;
+
+}
+
+.popular_collection .card .stars p{
+    font-size: 0.875rem;
+    color: #5E6366;
+
+}
+
+.popular_collection .card h4{
+    width: 196px;
+    color: #787885;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .card_container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+}
+
