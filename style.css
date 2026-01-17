@@ -261,7 +261,7 @@ header .companies .companies_logo2 img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
+    position: relative;
     justify-self: center;
 }
 .popular_collection .card{
@@ -326,6 +326,22 @@ header .companies .companies_logo2 img{
 
 }
 
+.see_more{
+    color: #E02C6D;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    gap: 8px;
+    position: absolute;
+    margin-top: 50px;
+    right: 330px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 400px) {
     .card_container{
@@ -335,3 +351,94 @@ header .companies .companies_logo2 img{
     
 }
 
+
+.featured{
+    margin-top: 100px;
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.featured .left_featured img{
+    width: 404px;
+    margin-bottom: 100px;
+}
+
+.featured .right_featured{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 100px;
+    align-items: start;
+}
+
+.featured .right_featured h2{
+    font-size: 2.375rem;
+    color: #0A0826;
+}
+
+.featured .right_featured p{
+    font-size: 1rem;
+    color: #6C6C6C;
+    width: 500px;
+}
+
+
+
+.join_now_btn{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    color: #fff; 
+    gap: 10px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 400px) {
+    .featured{
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 30px;
+        text-align: center;
+        
+    }
+
+    
+
+    .featured .left_featured img{
+    width: 299px;
+    
+    }
+
+    .featured .right_featured{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+.featured .right_featured h2 {
+    font-size: 1.5rem;
+    width: ;
+    
+}
+
+
+.featured .right_featured p {
+    font-size: 1rem;
+    color: #6C6C6C;
+    width: 329px;
+    line-height: 28px;
+}
+
+.see_more {
+    right: 30px;
+    
+}
+
+.popular_collection {
+    margin-top: 0px;
+}
+}
